@@ -1,11 +1,31 @@
+<!DOCTYPE html>
 <html>
   <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>guricerin's portal</title>
     <link rel="stylesheet" href="static/style.scss" />
+    <!-- 画像ファイルだけ static 直下に置いたら、build後のindex.htmlではうまくパス解決してくれない(static/favicon.ico のまま) -->
     <link rel="icon" href="favicon.ico" />
     <script src="src/main.tsx"></script>
+    <script src="https://unpkg.com/three@0.146.0/build/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@0.5.24/dist/vanta.fog.min.js"></script>
   </head>
   <body>
     <div id="main"></div>
+    <script>
+      window.addEventListener("DOMContentLoaded", () => {
+        // https://www.vantajs.com/?effect=fog
+        VANTA.FOG({
+          el: "#main",
+          mouseControls: true,
+          touchControls: true,
+          gyroControls: false,
+          minHeight: 200.0,
+          minWidth: 200.0,
+          speed: 1.2,
+        })
+      })
+    </script>
   </body>
 </html>
