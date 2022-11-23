@@ -7,7 +7,9 @@ interface Props {
 export function Header({ text }: Props) {
   return (
     <div>
-      <span>{text}</span>
+      <div className="subtitle">
+        <span>{text}</span>
+      </div>
     </div>
   );
 }

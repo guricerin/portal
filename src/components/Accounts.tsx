@@ -15,7 +15,7 @@ interface AccountProps {
 
 function Account(props: AccountProps) {
   return (
-    <div>
+    <div className="icon-container">
       <a href={props.url} target="_blank" rel="noopener noreferrer">
         {props.icon}
         <span>{props.name}</span>
