@@ -1,15 +1,32 @@
 import { React } from "../deps.ts";
-import Counter from "./components/Counter.tsx";
+import { Accounts } from "./components/Accounts.tsx";
+import { Works } from "./components/Works.tsx";
+
+interface AvatorProps {
+  icon: string;
+  name: string;
+}
+
+const avator = {
+  icon: "avator.jpg",
+  name: "guricerin",
+};
+
+function Avator({ icon, name }: AvatorProps) {
+  return (
+    <div className="section">
+      <img src={icon} />
+      <span>{name}</span>
+    </div>
+  );
+}
 
 export default function App() {
   return (
     <div className="container">
-      <h1 className="text-center">
-        Hello from React!
-      </h1>
-      <p className="card-body">
-      </p>
-      <Counter/ >
+      <Avator {...avator} />
+      <Accounts />
+      <Works />
     </div>
   );
 }
