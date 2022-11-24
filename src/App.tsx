@@ -10,10 +10,12 @@ const avator = {
 
 export default function App() {
   return (
-    <div className="">
-      <Avator {...avator} />
-      <Accounts />
-      <Works />
+    <div className="container">
+      <div className="inner">
+        <Avator {...avator} />
+        <Accounts />
+        <Works />
+      </div>
     </div>
   );
 }
