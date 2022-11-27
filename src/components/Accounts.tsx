@@ -41,8 +41,8 @@ export function Accounts() {
         />
         <Account
           icon={<FaMastodon />}
-          name="Misskey (misskey.io)"
-          url="https://misskey.io/@guricerin"
+          name="Mastodon@mstdn.nere9.help"
+          url="https://mstdn.nere9.help/@guricerin"
         />
         <Account
           icon={<FaTwitter />}
