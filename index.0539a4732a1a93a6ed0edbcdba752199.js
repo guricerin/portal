@@ -7436,12 +7436,8 @@
       url: "https://github.com/guricerin"
     }), /* @__PURE__ */ react_default.createElement(Account, {
       icon: /* @__PURE__ */ react_default.createElement(FaMastodon, null),
-      name: "Misskey@misskey.io",
-      url: "https://misskey.io/@guricerin"
-    }), /* @__PURE__ */ react_default.createElement(Account, {
-      icon: /* @__PURE__ */ react_default.createElement(FaMastodon, null),
-      name: "Mastodon@mstdn.nere9.help",
-      url: "https://mstdn.nere9.help/@guricerin"
+      name: "Mastodon@mstdn.maud.io",
+      url: "https://mstdn.maud.io/@gusalute"
     }), /* @__PURE__ */ react_default.createElement(Account, {
       icon: /* @__PURE__ */ react_default.createElement(FaTwitter, null),
       name: "Twitter",
