@@ -10,12 +10,12 @@ const siteData = {
 }
 
 const avator = {
-  iconPath: 'avator.jpg',
+  iconPath: 'img/avator.jpg',
   name: 'guricerin',
 }
 
 app.use('*', serveStatic({ root: './static' }))
-app.get('/', async (c) => {
+app.get('/', (c) => {
   return c.render(
     <Layout {...siteData} >
       <Home {...avator}/>
