@@ -9,8 +9,8 @@ export const Home: FC<AvatorProps> = (props: AvatorProps) => {
   return (
     <div class="container my-5">
       <div class="avator">
-        <img src={props.iconPath} />
-        <span>{props.name}</span>
+        <img class="circle responsive-img" src={props.iconPath} />
+        <span class="mt-3">{props.name}</span>
       </div>
     </div>
   )
