@@ -1,4 +1,3 @@
-import type { FC } from 'hono/jsx'
 import { html } from 'hono/html'
 
 interface SiteDataProps {
@@ -6,7 +5,7 @@ interface SiteDataProps {
   children?: any
 }
 
-export const Layout: FC<SiteDataProps> = (props: SiteDataProps) => html`<!doctype html>
+export const Layout = (props: SiteDataProps) => html`<!doctype html>
   <html>
     <head>
       <meta charset="utf-8" />
