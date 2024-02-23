@@ -9,17 +9,11 @@ html {
 }
 
 body {
-  display: flex;
   max-width: 100vw;
   min-height: 100vh;
-  flex-direction: column;
   padding: 1em 2em;
   color: white;
   background: linear-gradient(83.21deg, #3245ff 0%, #bc52ee 100%);
-}
-
-main {
-  flex: 1 0 auto;
 }
 
 .avator {
@@ -35,12 +29,4 @@ main {
   span {
     font-size: 32px;
   }
-}
-
-footer {
-  position: absolute;
-  width: 100%;
-  height: 80px;
-  bottom: 0;
-  overflow: hidden;
 }
