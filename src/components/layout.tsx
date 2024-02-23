@@ -1,23 +1,19 @@
 import type { FC } from 'hono/jsx'
-import { globalCss } from '../styles/global-css'
-import { Style } from 'hono/css'
 
-export const Layout: FC = () => {
+export const Layout: FC = (props) => {
+  const { children } = props
   return (
-    <html class={globalCss}>
+    <html>
       <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta property="og:url" content="https://guricerin.github.io/portal/" />
+        <link rel="stylesheet" href="/static/style.css" />
+        <link rel="icon" href="/static/favicon.ico" />
         <title>guricerin's portal</title>
-        <Style />
       </head>
       <body>
-        <main>
-          <div>
-            Hello, Hono!!!!
-          </div>
-        </main>
+        <main class='container'>{children}</main>
       </body>
     </html>
   )
