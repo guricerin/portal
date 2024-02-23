@@ -5,15 +5,19 @@ import { Home } from './components/home'
 
 const app = new Hono()
 
+const siteData = {
+  title: 'guricerin\'s portal'
+}
+
 const avator = {
-  iconSrc: 'avator.jpg',
+  iconPath: 'avator.jpg',
   name: 'guricerin',
 }
 
 app.use('*', serveStatic({ root: './static' }))
 app.get('/', async (c) => {
-  return c.html(
-    <Layout>
+  return c.render(
+    <Layout {...siteData} >
       <Home {...avator}/>
     </Layout>
   )
