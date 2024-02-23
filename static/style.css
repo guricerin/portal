@@ -4,20 +4,16 @@ html {
 }
 
 body {
-  height: 100%;
-}
-
-.root {
-  height: 100%;
+  padding: 1em 2em;
+  color: white;
+  background: linear-gradient(83.21deg, #3245ff 0%, #bc52ee 100%);
 }
 
 .container {
   display: flex;
   justify-content: center;
-  align-items: center;
+  /* align-items: center; */
   font-weight: 16px;
-  height: 100%;
-  color: black;
 }
 
 .avator {
@@ -61,10 +57,4 @@ body {
       }
     }
   }
-}
-
-.vanta-canvas {
-  position: fixed !important;
-  width: 100% !important;
-  height: 100% !important;
 }

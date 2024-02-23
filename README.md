@@ -1,16 +1,13 @@
 # portal
 
-## Dependencies
-
-- deno
-- velociraptor
-
-## Usage
-
-```bash
-# start local server
-vr dev
-
-# deploy
-git push origin main
+To install dependencies:
+```sh
+bun install
 ```
+
+To run:
+```sh
+bun run dev
+```
+
+open http://localhost:3000

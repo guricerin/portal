@@ -8,23 +8,20 @@ on:
 
 jobs:
   deploy:
-    runs-on: ubuntu-20.04
-    concurrency: # https://docs.github.com/ja/actions/using-workflows/workflow-syntax-for-github-actions#concurrency
-      group: ${{ github.workflow }}-${{ github.ref }}
-
+    runs-on: ubuntu-22.04
+    timeout-minutes: 10
     steps:
-      - uses: actions/checkout@v3
+      - name: Checkout
+        uses: actions/checkout@v4
 
       - name: Setup
-        uses: jurassiscripts/setup-velociraptor@v2
+        uses: oven-sh/setup-bun@v1
         with:
-          deno-version: "1.28.1"
+          bun-version: "1.0.28"
 
       - name: Build
-        working-directory: ./
         run: |
-          deno install -A https://deno.land/x/packup@v0.2.2/cli.ts > /dev/null
-          vr build
+          bun run build
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
