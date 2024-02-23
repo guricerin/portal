@@ -1,5 +1,7 @@
+/* override materialize css */
+
 html {
-  font-family: 'Noto Sans JP', sans-serif;
+  /* font-family: 'Noto Sans JP', sans-serif; */
   height: 100%;
 }
 
@@ -7,14 +9,6 @@ body {
   padding: 1em 2em;
   color: white;
   background: linear-gradient(83.21deg, #3245ff 0%, #bc52ee 100%);
-}
-
-.container {
-  display: flex;
-  justify-content: center;
-  flex-direction: row;
-  /* align-items: center; */
-  font-weight: 16px;
 }
 
 .avator {
@@ -32,30 +26,5 @@ body {
   span {
     text-align: center;
     font-size: 32px;
-  }
-}
-
-.subtitle {
-  font-size: 24px;
-  border-bottom: solid 2px #303638;
-  margin-bottom: 16px;
-}
-
-.section {
-  width: 400px;
-  margin-bottom: 32px;
-
-  .icon-container {
-    font-size: 20px;
-    margin-bottom: 6px;
-
-    a {
-      color: black;
-      text-decoration: none;
-
-      span {
-        margin-left: 6px;
-      }
-    }
   }
 }
