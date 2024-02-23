@@ -1,6 +1,5 @@
 import type { FC } from 'hono/jsx'
 import { html } from 'hono/html'
-import { Footer } from './footer'
 
 interface SiteDataProps {
   title: string
@@ -20,9 +19,7 @@ export const Layout: FC<SiteDataProps> = (props: SiteDataProps) => html`<!doctyp
       <title>${props.title}</title>
     </head>
     <body>
-      <header />
       <main class="contents">${props.children}</main>
-      ${Footer({})}
       <script src="https://cdn.jsdelivr.net/npm/@materializecss/materialize@2.0.3/dist/js/materialize.min.js"></script>
     </body>
   </html>`
