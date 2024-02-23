@@ -1,15 +1,17 @@
 import type { FC } from 'hono/jsx'
 
 interface AvatorProps {
-  iconSrc: string
+  iconPath: string
   name: string
 }
 
-export const Home: FC<AvatorProps> = ({ iconSrc, name }: AvatorProps) => {
+export const Home: FC<AvatorProps> = (props: AvatorProps) => {
   return (
-    <div class="avator">
-      <img src={iconSrc} />
-      <span>{name}</span>
+    <div class="container my-5">
+      <div class="avator">
+        <img class="circle responsive-img" src={props.iconPath} />
+        <span class="mt-3">{props.name}</span>
+      </div>
     </div>
   )
 }
