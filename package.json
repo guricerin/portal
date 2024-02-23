@@ -1,7 +1,7 @@
 {
   "scripts": {
     "dev": "bun run --hot src/index.tsx",
-    "build": "bun run build.ts"
+    "build": "rm -rf dist/ && bun run build.ts && cp static/* dist/"
   },
   "dependencies": {
     "hono": "^4.0.5"

@@ -6,13 +6,13 @@ import { Home } from './components/home'
 const app = new Hono()
 
 const avator = {
-  iconSrc: '/static/avator.jpg',
+  iconSrc: 'avator.jpg',
   name: 'guricerin',
 }
 
-app.use('/static/*', serveStatic({ root: './' }))
+app.use('*', serveStatic({ root: './static' }))
 app.get('/', async (c) => {
-  return c.render(
+  return c.html(
     <Layout>
       <Home {...avator}/>
     </Layout>
