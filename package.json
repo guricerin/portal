@@ -1,10 +1,13 @@
 {
   "scripts": {
+    "lint": "bunx eslint .",
     "dev": "bun run --hot src/index.tsx",
     "build": "rm -rf dist/ && bun run build.ts && cp -r static/* dist/"
   },
   "dependencies": {
-    "hono": "^4.0.5"
+    "eslint": "^8.57.0",
+    "hono": "^4.0.5",
+    "typescript-eslint": "^7.0.2"
   },
   "devDependencies": {
     "@types/bun": "latest"

@@ -1,10 +1,10 @@
-import { Link, LinkProps } from './link'
+import { Link, LinkProps } from "./link"
 
 export const Footer = () => {
   const linkProps: LinkProps = {
-    url: 'https://bulma.io/',
-    children: 'Bulma',
-    cssClass: 'white',
+    url: "https://bulma.io/",
+    children: "Bulma",
+    cssClass: "white",
   }
   return (
     <div class="">

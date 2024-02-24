@@ -1,4 +1,4 @@
-import { Link, LinkProps } from './link'
+import { Link, LinkProps } from "./link"
 
 interface WorkProps {
   name: string
@@ -8,7 +8,7 @@ interface WorkProps {
 }
 
 const Work = (props: WorkProps) => {
-  const using = `(using: ${props.using.join(', ')})`
+  const using = `(using: ${props.using.join(", ")})`
   const link: LinkProps = {
     url: props.url,
     children: "link",
