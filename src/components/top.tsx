@@ -33,8 +33,8 @@ const accounts: AccountList = {
 
 export const Top = () => {
   return (
-    <div class="container">
-      <section class="section">
+    <div class="">
+      <section>
         <Avator {...avator} />
       </section>
       <section class="section">

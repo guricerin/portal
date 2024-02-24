@@ -18,6 +18,6 @@ export const Layout = (props: SiteDataProps) => html`<!doctype html>
       <title>${props.title}</title>
     </head>
     <body>
-      <main class="section">${props.children}</main>
+      <main>${props.children}</main>
     </body>
   </html>`
