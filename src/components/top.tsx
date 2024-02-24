@@ -34,9 +34,9 @@ const accounts: AccountList = {
 export const Top = () => {
   return (
     <div class="">
-      <section>
+      <header>
         <Avator {...avator} />
-      </section>
+      </header>
       <section class="section">
         <Accounts {...accounts} />
       </section>
