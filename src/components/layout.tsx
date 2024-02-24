@@ -12,11 +12,12 @@ export const Layout = (props: SiteDataProps) => html`<!doctype html>
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <meta property="og:url" content="https://nitro6th.net" />
       <meta property="og:title" content="${props.title}" />
-      <link rel="stylesheet" href="css/style.css" />
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+      <link rel="stylesheet" href="css/style.css" /> <!-- overrides bulma -->
       <link rel="icon" href="favicon.ico" />
       <title>${props.title}</title>
     </head>
     <body>
-      <main class="contents">${props.children}</main>
+      <main class="section">${props.children}</main>
     </body>
   </html>`
