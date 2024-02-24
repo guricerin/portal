@@ -43,7 +43,6 @@ const works: WorkList = {
       name: 'portal',
       description: 'This site.',
       using: ['TypeScript', 'Bun', 'Hono'],
-      url: '',
     },
     {
       name: 'bf-derivatives-tools',

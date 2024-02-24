@@ -2,26 +2,27 @@ import { Link, LinkProps } from './link'
 
 interface WorkProps {
   name: string
-  url: string
   description: string
   using: string[]
+  url?: string
 }
 
 const Work = (props: WorkProps) => {
-  const using = (props.using.join(', '))
+  const using = `using: ${props.using.join(', ')}`
   return (
-    <div class="card">
-      <div class="card-content">
-        <div class="media">
-          <div class="media-content">
-            <p class="title">{props.name}</p>
+    <div class="column">
+      <div class="card">
+        <header class="card-header">
+          <p class="card-header-title">
+            {props.name}
+          </p>
+        </header>
+        <div class="card-content">
+          <div class="content">
+            {props.description}
+            <br />
+            {using}
           </div>
-        </div>
-
-        <div class="content">
-          {props.description}
-          <br />
-          using: {using}
         </div>
       </div>
     </div>
@@ -34,7 +35,7 @@ export interface WorkList {
 
 export const Works = (props: WorkList) => {
   const list = (
-    <div>
+    <div class="columns">
       {props.list.map(x => <Work {...x} />)}
     </div>
   )
