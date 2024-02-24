@@ -1,6 +1,7 @@
 {
   "scripts": {
     "lint": "bunx eslint .",
+    "lint:fix": "bunx eslint --fix .",
     "dev": "bun run --hot src/index.tsx",
     "build": "rm -rf dist/ && bun run build.ts && cp -r static/* dist/"
   },
