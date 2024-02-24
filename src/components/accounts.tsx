@@ -1,44 +1,45 @@
 import { Link, LinkProps } from './link'
 
-interface AccountProps {
+interface ContactProps {
   url: string
   iconClass: string
   siteName: string
 }
 
-const Account = (props: AccountProps) => {
+const Contact = (props: ContactProps) => {
   const children = (
-    <div>
-      <i class={props.iconClass}></i>
-      <span>{props.siteName}</span>
-    </div>
+    <>
+      <span class="panel-icon">
+        <i class={props.iconClass}></i>
+      </span>
+      {props.siteName}
+    </>
   )
   const linkProps: LinkProps = {
     url: props.url,
+    cssClass: "panel-block",
     children: children,
   }
   return (
-    <li>
-      <Link {...linkProps} />
-    </li>
+    <Link {...linkProps} />
   )
 }
 
-export interface AccountList {
-  list: AccountProps[]
+export interface ContactList {
+  list: ContactProps[]
 }
 
-export const Accounts = (props: AccountList) => {
-  const a = (
-    <ul class="account">
-      {props.list.map(a => <Account {...a} />)}
-    </ul>
+export const Contacts = (props: ContactList) => {
+  const list = (
+    <article class="panel is-link is-shadowless">
+      {props.list.map(a => <Contact {...a} />)}
+    </article>
   )
   return (
     <div class="container">
-      <h2 class="subtitle is-3">Accounts</h2>
+      <h2 class="subtitle is-3">Contacts</h2>
       <hr/>
-      {a}
+      {list}
     </div>
   )
 }

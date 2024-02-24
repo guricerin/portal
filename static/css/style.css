@@ -23,13 +23,3 @@ html {
     border-radius: 50%;
   }
 }
-
-.account {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-
-  a {
-    /* color: black; */
-  }
-}

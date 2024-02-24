@@ -1,12 +1,12 @@
 import { Avator, AvatorProps } from "./avator"
-import { Accounts, AccountList } from "./accounts"
+import { Contacts, ContactList } from "./accounts"
 
 const avator: AvatorProps = {
   iconPath: 'img/avator.jpg',
   name: 'guricerin',
 }
 
-const accounts: AccountList = {
+const contacts: ContactList = {
   list: [
     {
       url: 'https://keybase.io/guricerin',
@@ -43,7 +43,7 @@ export const Top = () => {
         <Avator {...avator} />
       </header>
       <section class="section">
-        <Accounts {...accounts} />
+        <Contacts {...contacts} />
       </section>
     </div>
   )
