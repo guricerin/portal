@@ -16,7 +16,7 @@ const avator = {
 
 app.use('*', serveStatic({ root: './static' }))
 app.get('/', (c) => {
-  return c.render(
+  return c.html(
     <Layout {...siteData} >
       <Home {...avator}/>
     </Layout>

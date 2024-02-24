@@ -17,14 +17,23 @@ body {
   background: linear-gradient(83.21deg, #3245ff 0%, #bc52ee 100%);
 }
 
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-weight: 16px;
+}
+
 .avator {
   display: flex;
   align-items: center;
   flex-direction: column;
-  margin-bottom: 32px;
+  margin-top: 1.5rem;
 
   img {
     height: 250px;
+    border-radius: 50%;
   }
 
   span {

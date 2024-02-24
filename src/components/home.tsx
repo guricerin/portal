@@ -5,10 +5,12 @@ interface AvatorProps {
 
 export const Home = (props: AvatorProps) => {
   return (
-    <div class="container my-5">
+    <div class="container">
       <div class="avator">
-        <img class="circle responsive-img" src={props.iconPath} />
-        <span class="mt-3">{props.name}</span>
+        <img src={props.iconPath} />
+        <span>{props.name}</span>
+      </div>
+      <div>
       </div>
     </div>
   )
