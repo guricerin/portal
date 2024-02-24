@@ -1,5 +1,5 @@
 import { Avator, AvatorProps } from "./avator"
-import { Contacts, ContactList } from "./accounts"
+import { Contacts, ContactList } from "./contacts"
 
 const avator: AvatorProps = {
   iconPath: 'img/avator.jpg',
