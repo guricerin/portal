@@ -2,7 +2,7 @@ import { Link, LinkProps } from './link'
 
 interface ContactProps {
   url: string
-  iconClass: string
+  iconClass: string[]
   siteName: string
 }
 
@@ -10,7 +10,7 @@ const Contact = (props: ContactProps) => {
   const children = (
     <>
       <span class="panel-icon">
-        <i class={props.iconClass}></i>
+        <i class={props.iconClass.join(' ')}></i>
       </span>
       {props.siteName}
     </>
