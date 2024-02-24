@@ -6,7 +6,7 @@ import { Top } from "./components/top"
 const app = new Hono()
 
 const siteData = {
-  title: "guricerin\'s portal"
+  title: "guricerin's portal"
 }
 
 app.use("*", serveStatic({ root: "./static" }))

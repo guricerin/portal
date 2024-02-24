@@ -4,3 +4,10 @@ repos:
     hooks:
       - id: detect-secrets
         args: ["--baseline", ".secrets.baseline.json"]
+
+  - repo: local
+    hooks:
+      - id: lint
+        name: lint
+        language: system
+        entry: bun run lint
