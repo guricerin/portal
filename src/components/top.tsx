@@ -1,5 +1,6 @@
 import { Avator, AvatorProps } from "./avator"
 import { Contacts, ContactList } from "./contacts"
+import { Works, WorkList } from "./works"
 
 const avator: AvatorProps = {
   iconPath: 'img/avator.jpg',
@@ -36,6 +37,23 @@ const contacts: ContactList = {
   ]
 }
 
+const works: WorkList = {
+  list: [
+    {
+      name: 'portal',
+      description: 'This site.',
+      using: ['TypeScript', 'Bun', 'Hono'],
+      url: '',
+    },
+    {
+      name: 'bf-derivatives-tools',
+      description: 'Brainfuck interpreter and translator.',
+      using: ['Rust'],
+      url: 'https://crates.io/crates/bf-derivatives-tools',
+    },
+  ]
+}
+
 export const Top = () => {
   return (
     <div>
@@ -44,6 +62,9 @@ export const Top = () => {
       </header>
       <section class="section">
         <Contacts {...contacts} />
+      </section>
+      <section class="section">
+        <Works {...works} />
       </section>
     </div>
   )
