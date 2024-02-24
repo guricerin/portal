@@ -29,7 +29,7 @@ export const Accounts = (props: AccountList) => {
   )
   return (
     <div class="container">
-      <h2 class="subtitle">Accounts</h2>
+      <h2 class="subtitle is-3">Accounts</h2>
       <hr/>
       {a}
     </div>

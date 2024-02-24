@@ -33,7 +33,7 @@ const accounts: AccountList = {
 
 export const Top = () => {
   return (
-    <div class="">
+    <div>
       <header>
         <Avator {...avator} />
       </header>
