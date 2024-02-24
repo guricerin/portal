@@ -1,18 +1,25 @@
-import { Link } from './link'
+import { Link, LinkProps } from './link'
 
 interface AccountProps {
   url: string
+  iconClass: string
   siteName: string
 }
 
 const Account = (props: AccountProps) => {
-  const linkProp = {
+  const children = (
+    <div>
+      <i class={props.iconClass}></i>
+      <span>{props.siteName}</span>
+    </div>
+  )
+  const linkProps: LinkProps = {
     url: props.url,
-    children: props.siteName,
+    children: children,
   }
   return (
     <li>
-      <Link {...linkProp} />
+      <Link {...linkProps} />
     </li>
   )
 }

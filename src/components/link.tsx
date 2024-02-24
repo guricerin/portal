@@ -1,4 +1,4 @@
-interface LinkProps {
+export interface LinkProps {
   url: string
   children?: any
 }
