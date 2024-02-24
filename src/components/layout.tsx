@@ -1,4 +1,4 @@
-import { html } from 'hono/html'
+import { html } from "hono/html"
 
 interface SiteDataProps {
   title: string
