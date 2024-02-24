@@ -31,7 +31,7 @@ export interface ContactList {
 
 export const Contacts = (props: ContactList) => {
   const list = (
-    <article class="panel is-link is-shadowless">
+    <article class="panel is-link">
       {props.list.map(x => <Contact {...x} />)}
     </article>
   )

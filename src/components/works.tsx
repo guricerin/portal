@@ -4,11 +4,15 @@ interface WorkProps {
   name: string
   description: string
   using: string[]
-  url?: string
+  url: string
 }
 
 const Work = (props: WorkProps) => {
   const using = `using: ${props.using.join(', ')}`
+  const link: LinkProps = {
+    url: props.url,
+    children: "link",
+  }
   return (
     <div class="column">
       <div class="card">
@@ -24,6 +28,13 @@ const Work = (props: WorkProps) => {
             {using}
           </div>
         </div>
+        <footer class="card-footer">
+          <p class="card-footer-item">
+            <span>
+              View on <Link {...link} />
+            </span>
+          </p>
+        </footer>
       </div>
     </div>
   )
