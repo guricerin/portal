@@ -9,7 +9,7 @@ export const Avator = (props: AvatorProps) => {
       <div class="hero-body">
         <div class="container avator">
           <img src={props.iconPath} />
-          <span>{props.name}</span>
+          <h1 class="title is-1">{props.name}</h1>
         </div>
       </div>
     </section>
