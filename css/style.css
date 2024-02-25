@@ -17,6 +17,22 @@ html {
   }
 }
 
+main {
+  background-color: #eff2f9;
+
+  hr {
+    background-color: #aaaaaa;
+  }
+}
+
+.custom-panel {
+  background-color: white;
+}
+
+.work-name {
+  font-weight: bold;
+}
+
 .custom-footer {
   padding: 1.5rem;
   color: white;
