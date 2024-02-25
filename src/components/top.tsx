@@ -63,19 +63,21 @@ const works: WorkList = {
 
 export const Top = () => {
   return (
-    <div>
+    <>
       <header>
         <Avator {...avator} />
       </header>
-      <section class="section">
-        <Contacts {...contacts} />
-      </section>
-      <section class="section">
-        <Works {...works} />
-      </section>
+      <main>
+        <section class="section">
+          <Contacts {...contacts} />
+        </section>
+        <section class="section">
+          <Works {...works} />
+        </section>
+      </main>
       <footer class="footer custom-footer">
         <Footer />
       </footer>
-    </div>
+    </>
   )
 }
