@@ -17,6 +17,14 @@ html {
   }
 }
 
+main {
+  background-color: #eff2f9;
+}
+
+hr {
+  background-color: #aaaaaa;
+}
+
 .custom-footer {
   padding: 1.5rem;
   color: white;
