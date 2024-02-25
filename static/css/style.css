@@ -25,6 +25,10 @@ main {
   }
 }
 
+.custom-panel {
+  background-color: white;
+}
+
 .work-name {
   font-weight: bold;
 }
