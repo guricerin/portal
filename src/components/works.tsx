@@ -15,14 +15,12 @@ const Work = (props: WorkProps) => {
   }
   return (
     <div class="column">
-      <div class="card">
-        <header class="card-header">
-          <p class="card-header-title">
-            {props.name}
-          </p>
-        </header>
+      <div class="card custom-card is-shadowless">
         <div class="card-content">
           <div class="content">
+            <p class="work-name">
+              {props.name}
+            </p>
             {props.description}
             <br />
             {using}

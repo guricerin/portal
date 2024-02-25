@@ -19,10 +19,14 @@ html {
 
 main {
   background-color: #eff2f9;
+
+  hr {
+    background-color: #aaaaaa;
+  }
 }
 
-hr {
-  background-color: #aaaaaa;
+.work-name {
+  font-weight: bold;
 }
 
 .custom-footer {
